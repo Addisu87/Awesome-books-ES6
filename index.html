@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome-books</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <!-- Nav-Bar -->
+    <header id="header">
+      <div class="logo"><span>Awesome Books</span></div>
+      <nav class="nav-links">
+        <ul>
+          <li>
+            <a href="#book-list" class="nav-a" id="nav-list"> List</a>
+            <span id="counter"></span>
+          </li>
+          <li>
+            <a href="#add-new-book" class="nav-a" id="nav-add">Add new</a>
+          </li>
+          <li>
+            <a href="#contact-info" class="nav-a" id="nav-contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- date -->
+    <div id="dateTime"></div>
+
+    <!-- Book List -->
+    <section id="booklist">
+      <div id="book-list" class="hide-section">
+        <h1 class="header-1">All Awesome books</h1>
+        <section id="book-container">
+          <!-- Content here is added from javaScript -->
+          <table id="bookList">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th class="cellBtn">&nbsp;</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </section>
+      </div>
+    </section>
+
+    <!-- Add New Book -->
+    <section id="addbook">
+      <form id="add-new-book" class="hide-section">
+        <h2 class="header-1">Add a new book</h2>
+        <input
+          id="title-input"
+          type="text"
+          placeholder="Title"
+          autofocus
+          required
+        />
+        <input id="author-input" type="text" placeholder="Author" required />
+        <input
+          id="add-btn"
+          class="btn add-btn hide"
+          type="submit"
+          value="Add"
+        />
+      </form>
+    </section>
+
+    <!-- Contact Info -->
+    <section id="contact">
+      <div id="contact-info" class="hide-section">
+        <h2 class="header-1">Contact Information</h2>
+        <p>
+          Do you have any questions or you just want to say "Hello"? <br />
+          You can reach out to us!
+        </p>
+        <ul id="contact-info-list">
+          <li>
+            Our e-mail:<a href="mailto:addisu.haile@yahoo.com">
+              addisu.haile@yahoo.com</a
+            >
+          </li>
+          <li>
+            Our phone number: <a href="tel:+251912912144">+251-912-912-144</a>
+          </li>
+          <li><a href="#">Our address: Piazza 13, Gondar,Ethiopia</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <p>Copyright ...</p>
+      </div>
+    </footer>
+
+    <script type="module" src="src/index.js"></script>
+  </body>
+</html>
