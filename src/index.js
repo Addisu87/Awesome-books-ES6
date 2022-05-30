@@ -1,11 +1,10 @@
 import Book from '../modules/bookClass.js';
 import gotoPage from '../modules/gotoPage.js';
+import { DateTime } from '../modules/luxon.min.js';
 
 const titleBookInput = document.getElementById('title-input');
 const authorBookInput = document.getElementById('author-input');
-const bookForm = document.getElementsByTagName('form')[0];
 const addBtn = document.getElementById('add-btn');
-const dateTime = document.getElementById('dateTime');
 const bookCounter = document.getElementById('counter');
 
 let counter = 0;
@@ -16,17 +15,17 @@ titleBookInput.addEventListener('input', () => {
 });
 
 // date format
-const myDate = () => {
-  const today = new Date();
-  dateTime.innerHTML = today.toLocaleString();
-};
-setInterval(myDate, 1000);
+setInterval(() => {
+  const now = DateTime.now();
+  const showDate = now.toLocaleString(DateTime.DATETIME_MED);
+  document.getElementById('showDate').innerHTML = showDate;
+}, 1000);
 
 // navigation
 const links = document.querySelectorAll('.nav-a');
 
 // Prevent Form from Submit
-bookForm.addEventListener('submit', (event) => {
+document.getElementsByTagName('form')[0].addEventListener('submit', (event) => {
   event.preventDefault();
 });
 
@@ -49,7 +48,7 @@ addBtn.addEventListener('click', () => {
     const newBook = new Book(
       Book.booksArr.length,
       titleBookInput.value,
-      authorBookInput.value
+      authorBookInput.value,
     );
     newBook.Add();
     showCounter();

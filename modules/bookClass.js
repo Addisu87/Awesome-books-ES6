@@ -11,7 +11,7 @@ export default class Book {
   // Remove a Book
   static remove() {
     Book.booksArr = Book.booksArr.filter(
-      (book) => +book.id !== +this.parentElement.id
+      (book) => +book.id !== +this.parentElement.id,
     );
     this.parentElement.remove();
 
@@ -54,8 +54,8 @@ export default class Book {
 
   // Clear Fields
   static clearField() {
-    titleBookInput.value = '';
-    authorBookInput.value = '';
+    document.getElementById('title-input').value = '';
+    document.getElementById('author-input').value = '';
   }
 
   static load(bookData = JSON.parse(localStorage.getItem('Books'))) {
@@ -66,6 +66,6 @@ export default class Book {
       });
       Book.booksArr = bookData;
     }
-    document.getElementById('list-link').click();
+    document.getElementById('nav-list').click();
   }
 }

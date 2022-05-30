@@ -19,7 +19,7 @@ a {
   text-decoration: none;
 }
 
-#dateTime {
+#showDate {
   align-self: flex-end;
   margin: 1rem;
 }
@@ -29,6 +29,11 @@ a {
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
+}
+
+.table th {
+  padding: 0.5rem;
+  background-color: burlywood;
 }
 
 .btn {
