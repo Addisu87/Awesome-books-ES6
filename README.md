@@ -1,19 +1,16 @@
-# Project Name
+# Awesome books Application
 
---Awesome books Application
-
-> Description the project.
-> --Awesome books Application that build using JavaScript ES6.
+> Awesome books Application that build using JavaScript ES6.
 
 ## Built With
 
-- HTML5
+- HTML-5
 - CSS
 - JavaScript-ES6
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://addisu87.github.io/Awesome-books-ES6/)
 
 ## Getting Started
 
@@ -21,15 +18,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
+- Any code editor such as VS code or Atom.
 
 ## Authors
 
@@ -43,7 +32,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Addisu87/Awesome-books-ES6/issues).
 
 ## Show your support
 
